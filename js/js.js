@@ -49,11 +49,4 @@ $(document).ready(function(){
             return false;
             });
 
-        /*리뷰 이미지 클릭*/
-        $('.popup-img').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
 });
