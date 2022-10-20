@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/nslide.js"></script>
+    <script src="./js/js.js"></script>
+    
+    <title>restday</title>
+</head>
+
+<body>
+    <header>
+        <div class="util">
+            <div class="wrap">
+            <ul class="left_util">
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">후기</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+        <ul class="right_util">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">장바구니</a></li>
+        </ul>
+    </div>
+    </div>
+    
+    <div class="gnb_1">
+        <h1 class="logo wrap"><a href="#"><img style="width: 180px;"src="./img/logo.png" alt="로고"/></a></h1>
+        <ul class="wrap gnb">
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Living</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Tableware</a></li>
+        </ul>
+    </div>
+    </header>
+    
+    <div class="visual">
+        <div class="slider">
+            <div class="myslide fade">
+                <div class="txt">
+                    <p>편안한 가구는 마음도 편안해집니다 <br/> <span>Hope your every day is like a rest day</span></p>
+                    <div><a href="">Furniture</a></div>
+                </div>
+                
+                <img src="./img/visual01.png" style="width: 100%; max-height: 800px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">
+                    <p>나만의 공간에 작지만 다양한 변화를 주는 방법<br/> <span>Hope your every day is like a rest day</span></p>
+                    <div><a href="">Living</a></div>
+                </div>
+                <img src="./img/visual02.png" style="width: 100%; max-height: 800px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">
+                    <p>인테리의 기본, 조명<br/> <span>Hope your every day is like a rest day</span></p>
+                    <div><a href="">Lighting</a></div>
+                </div>
+                <img src="./img/visual03.png" style="width: 100%; max-height: 800px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">
+                    <p>식탁의 큰 변화<br/> <span>Hope your every day is like a rest day</span></p>
+                    <div><a href="">Tablware</a></div>
+                </div>
+                <img src="./img/visual04.png" style="width: 100%; max-height: 800px;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          <div class="dotsbox" style="text-align:center">
+              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <!-- /onclick js -->
+
+    </div>
+    </div>
+    <div id="section1" class="wrap">
+        <figure style="width: 50%;"class="left_banner">
+			<img style="width: 100%;"src="./img/banner1.png" alt="" />
+            <div class="button"><a href="">recommend</a></div>
+		</figure>
+		<figure style="width: 40%;" class="right_banner1">
+			<a href=""><img class="second_banner"style="width: 100%;" height="200px;" src="./img/banner2.png" alt="" /></a>
+            <figcaption>다른 사람들의 취향 구경하기</figcaption>
+            </figure>
+        <figure style="width: 40%;" class="right_banner2">
+			<a href=""><img style="width: 100%; "  height="200px;"src="./img/banner3.png" alt="" /></a>
+            <figcaption>겨울맞이 이벤트 인테리어 소품 구경하기</figcaption>
+		</figure>
+    </div>
+    <div id="line_banner">
+        <div><a href="#"><img style="width: 130px;"src="./img/logo.png"> X <sapn style="color: #273896; font-weight: 600; font-size: 2rem;">삼성카드</sapn> <p>기간 내 10만원 이상 결제 시 5천원 즉시 할인</p></a> <strong>samsungcard</strong></div>
+        <div><a href="">겨울 맞이 이벤트 <p><span>40%</span> SALE</p></a> <strong>EVENT</strong></div>
+    </div>
+    <div id="section2" class="wrap">
+        <h2>NEW PRODUCT</h2>
+        <div id="slide">
+            <ul class="slideWrap">
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo1.jpg" alt="slide1"/>
+                    <p>아쿠아 볼그릇 <br/> <s>69,800</s><strong> 62,200</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo2.jpg" alt="slide2"/>
+
+                    <p>펜던트 조명 ivory <br/> <s>152,000</s><strong> 133,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo3.jpg" alt="slide3"/>
+                    <p>패브릭 3인 소파 <br/> <s>32,5000</s><strong> 298,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo4.jpg" alt="slide3"/>
+                    <p>리브 고밀도 바이오워싱베개커버 <br/> <s>22,000</s><strong> 11,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo5.jpg" alt="slide3"/>
+                    <p>스프링머그 350ml <br/> <s>44,000</s><strong> 32,800</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo6.jpg" alt="slide3"/>
+                    <p>그라데이션 쉬폰 커튼 <br/> <s>132,000</s><strong> 118,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo7.jpg" alt="slide3"/>
+                    <p>북유럽 옷장 white <br/> <s>600,000</s><strong> 520,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo8.jpg" alt="slide3"/>
+                    <p>브뤼네 펜던트 조명 4colors <br/> <s>188,000</s><strong> 152,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo9.jpg" alt="slide3"/>
+                    <p>포세린 세라믹 원목 식탁 <br/> <s>800,000</s><strong> 400,000</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                    <img src="./img/photo10.jpg" alt="slide3"/>
+                    <p>러버우드 의자<br/> <s>50,000</s><strong>  25,000</strong></p>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="btnWrap">
+            <button onclick="prevFunc()">&#10094;</button>
+            <button onclick="nextFunc()">&#10095;</button>
+        </div>
+    </div>
+    <div id="section3" class="wrap">
+        <h2>BEST PRODUCT</h2>
+        <div id="choice">
+            <ul>
+                <li><a href="return false">Lighting</a></li>
+                <li><a href="">Furniture</a></li>
+                <li><a href="">Living</a></li>
+                <li><a href="">Tableware</a></li>
+            </ul>
+        </div>
+        <ul class="light">
+            <li><a href="#"><img src="./img/best1.jpg" alt=""/><p>젤로비 조명<br/><s>80,000</s><strong> 55,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best2.jpg" alt=""/><p>UFO 조명<br/><s>110,000</s><strong> 93,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best3.jpg" alt=""/><p>선인장 조명<br/><s>180,000</s><strong> 160,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best4.jpg" alt=""/><p>모데르 인테리어 조명 <br/><s>150,000</s><strong> 120,000</strong></p></a></li>
+        </ul>
+        <ul class="furniture">
+            <li><a href="#"><img src="./img/best5.jpg" alt=""/><p>라탄 탁자<br/><s>130,000</s><strong> 115,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best6.jpg" alt=""/><p>원목 탁자<br/><s>120,000</s><strong> 99,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best7.jpg" alt=""/><p>오트밀 선반<br/><s>80,000</s><strong> 55,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best8.jpg" alt=""/><p>라탄 침대<br/><s>400,000</s><strong> 328,000</strong></p></a></li>
+
+        </ul>
+        <ul class="living">
+            <li><a href="#"><img src="./img/best9.jpg" alt=""/><p>fabric 커튼<br/><s>120,000</s><strong> 99,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best10.jpg" alt=""/><p>텍스처 속커튼<br/><s>80,000</s><strong> 68,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best11.jpg" alt=""/><p>그린티 침구<br/><s>110,000</s><strong> 55,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/photo4.jpg" alt=""/><p>리브 고밀도 바이오워싱베개커버<br/><s>22,000</s><strong> 11,000</strong></p></a></li>
+        </ul>
+        <ul class="tableware">
+            <li><a href="#"><img src="./img/best12.jpg" alt=""/><p>그린엣지 tableware<br/><s>130,000</s><strong> 108,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best13.jpg" alt=""/><p>호박플라워 컵<br/><s>56,000</s><strong> 38,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best14.jpg" alt=""/><p>도자기 그릇<br/><s>98,000</s><strong> 82,000</strong></p></a></li>
+            <li><a href="#"><img src="./img/best15.jpg" alt=""/><p>둥근 컵<br/><s>30,000</s><strong> 22,000</strong></p></a></li>
+        </ul>
+    </div>
+    <div id="section4">
+        <div class="rest">
+            <ul>
+                <li><img src="./img/rest.jpg" alt/></li>
+                <li><img src="./img/about.jpg" alt/></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section5">
+        <div class="wrap">
+        <h2>REVIEW</h2>
+        <a href="#" class="more">more →</a>
+        <div class="review">
+            <figure>
+                <img src="./img/review1.jpg">
+                
+                <figcaption><a href="./img/review_click1.jpg" target="_blank" class="popup-img">more</a><p>사진보고 혹해서 샀는데 실물이 훨씬 귀엽고 예뻐요 방 분위기도 따뜻하게 바꼈어요 다들 어디꺼냐고 물어보네요.. 고민하지말고 꼭 사세요</p></figcaption>
+            </figure>
+            <figure>
+                <img src="./img/review2.jpg">
+                <figcaption><a href="./img/review_click2.jpg" target="_blank" class="popup-img">more</a><p>평범한 테이블은 사고싶지 않아서 찾아보다가 플라워 식탁을 발견했어요 유니크하고 무엇보다 귀엽네요</p></figcaption>
+            </figure>
+            <figure>
+                <img src="./img/review3.jpg">
+                <figcaption><a href="./img/review_click3.jpg" target="_blank" class="popup-img">more</a><p>쉬폰 커튼을 왜 이제서야 샀을까요 방 분위기가 확 달라지네요</p></figcaption>
+            </figure>
+        </div>
+        </div>
+    </div>
+    <div id="section6" class="wrap">
+        <div>
+            <p>restday 케어서비스</p>
+            <span>처음부터 끝까지 안심하실수 있도록 고객님의 만족을 위해 <br/>
+            고민하는 레스트데이의 마음을 담은 서비스입니다.</span>
+            <img src="./img/icon1.png" alt=""/>
+        </div>
+        <div>
+            <p>restday 구매가이드</p>
+            <span>클릭 한 번으로 배달부터 설치까지 한번에! <br/>
+            레스트데이가 최초로 조명 배달 설치 서비스를 시작합니다</span>
+            <img src="./img/icon2.png" alt=""/>
+        </div>
+        <div>
+            <p>restday 설치가이드</p>
+            <span>직접 설치도 어렵지 않아요, <br/>
+            구매하신 제품의 설치 방법을 확인해보세요!</span>
+            <img src="./img/icon3.png" alt=""/>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+        <div>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">광고/제휴 문의</a></li>
+            </ul>
+            <ul class="sns_icon">
+                <li><a href=""><img src="./img/sns1.png" alt=""/></a></li>
+                <li><a href=""><img src="./img/sns2.png" alt=""/></a></li>
+                <li><a href=""><img src="./img/sns3.png" alt=""/></a></li>
+                <li><a href=""><img src="./img/sns4.png" alt=""/></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><strong>CUSTOMER CENTER</strong></li>
+                <li>1004-1004</li>
+                <li>평일 AM 09:00 ~ PM 20:00</li>
+                <li>점심시간 PM 12:00 ~ PM 13:00</li>
+                <li>토요일 AM 09:00 ~ PM 14:00</li>
+            </ul>
+            <ul>
+                <li><strong>COMPANY</strong></li>
+                <li>법인명 : (주)레스트데이</li>
+                <li>이메일 : wnstjsektzja@naver.com</li>
+                <li>사업자등록번호 : 100-410-04486</li>
+            </ul>
+            <ul>
+                <li><strong>ADDRESS</strong></li>
+                <li>본사 : 서울 어딘가에 있습니다</li>
+                <li>물류 : 경기도 어딘가에 있습니다</li>
+            </ul>
+        </div>
+        <div>
+            <p>COPYRIGHT© RESTDAY CO LTD. ALL RIGHTS RESERVED.</p>
+            <img style="width: 120px; height: 30px; margin-top: 40px;"src="./img/logo.png" alt=""/>
+        </div>
+    </div>
+    </footer>
+    <script src="./js/slide.js"></script>
+</body>
+</html>

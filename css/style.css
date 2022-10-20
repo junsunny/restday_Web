@@ -1,0 +1,624 @@
+@charset  "utf-8";
+@import "./reset.css";
+/*font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+.wrap{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.util{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.left_util>li{
+    display: block;
+    float: left;
+    margin: 0 20px;
+}
+
+.right_util{
+    position: absolute;
+    right: 0;
+}
+.right_util>li{
+    display: block;
+    float: left;
+    margin: 0 20px;
+}
+
+.left_util>li>a,.right_util>li>a{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.logo>a{display: block; text-align: center; margin: 40px 0;}
+
+/*gnb*/
+.gnb{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+
+}
+.gnb>li>a{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    
+}
+
+.gnb>li>a:before{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 2px;
+    background-color: #505946;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.gnb>li>a:hover:before{
+    width:100%;
+}
+
+/*비주얼배너*/
+.visual{margin-top: 30px;}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.myslide{
+    overflow: hidden;
+    display: none;
+}
+.prev, .next{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    font-size:50px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+}
+.prev{
+    left: 10%;
+}
+.next{
+    right: 10%;
+}
+.prev:hover, .next:hover{color: #fff;}
+.dotsbox{
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.active, 
+.dot:hover{
+    background: #fff;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.txt{
+    position: absolute;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    z-index: 99999999;
+}
+.txt span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.9rem;
+}
+.txt div {
+    margin-top: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: #818976;
+    border-radius: 20px;
+}
+.txt div a{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.fade{
+    display: inline-block;
+    background: rgba(255,255,255,0.5);
+    animation: fadein 6s;
+    -moz-animation: fadein 6s; /* Firefox */
+    -webkit-animation: fadein 6s; /* Safari and Chrome */
+    -o-animation: fadein 6s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*section1*/
+#section1{
+    width: 1440px;
+    box-sizing:border-box;
+    margin:0 auto;
+    align-items:center;
+    margin-top: 100px;
+}
+
+
+#section1 figure:first-child{position: relative;}
+.button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #818976;
+    border-radius: 20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button a{color: #fff; 
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+#section1 figure:nth-child(2){
+    position: absolute;
+    right: 0;
+    top:0;
+}
+#section1 figure:nth-child(3){
+    position: absolute;
+    top:55%;
+    right: 0;
+}
+
+#section1 figure:nth-child(2) figcaption,#section1 figure:nth-child(3) figcaption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 1rem;
+    transition:all .4s;
+    background: rgba(255,255,255,0.5);
+    width: 100%; height: 100%;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#section1 figure:nth-child(2):hover figcaption,#section1 figure:nth-child(3):hover figcaption{
+    opacity: 1;
+}
+
+
+/*띠배너*/
+#line_banner{display: flex; margin-top: 150px;}
+#line_banner div:first-child{
+    display: block;
+    background: #eee;
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+    height: 150px;
+}
+#line_banner div:first-child a{
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 2;
+    position: absolute;
+    top:50%; left: 40%;
+    transform: translate(-40%,-50%);
+}
+#line_banner div:first-child a p {
+    font-size: 1rem;
+    text-align: center;
+}
+#line_banner div:first-child strong{
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: absolute;
+    top:50%;
+    left: 80%;
+    transform: translateY(-50%);
+}
+#line_banner div:last-child{
+    background: url("../img/banner.jpg") no-repeat center/cover;
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+#line_banner div:last-child a{
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    position: absolute;
+    top:50%;
+    left: 15%;
+    transform: translate(-15%,-50%);
+    color: #333;
+    
+}
+#line_banner div:last-child a p span{
+    color: #505946;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+#line_banner div:last-child strong{
+    position: absolute;
+    top:50%;
+    left: 70%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #505946;
+    transform: translate(-70%,-50%);
+}
+
+/*신상품*/
+#section2{margin-top: 150px;}
+#section2 h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.btnWrap button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 50px;
+    color: #666;
+}
+
+.btnWrap button:hover{
+    color: #333;
+}
+
+
+.slideWrap{position: relative;}
+.slideWrap>li{
+    display: block;
+    width:100%; height: 500px;
+    box-sizing: border-box;
+    float: left;
+    position: absolute;
+}
+.slideWrap>li img{width: 25%; height: 420px;}
+ 
+.slideWrap::after, .btnWrap>button:last-child::after{
+    content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+#slide{
+    width:100%;
+    height: 500px;
+    margin: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.btnWrap{
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.btnWrap>button:last-child{
+    float: right;
+}
+
+.slideWrap>li:nth-child(1){left: 0;}
+.slideWrap>li:nth-child(2){left: 360px;}
+.slideWrap>li:nth-child(3){left: 720px;}
+.slideWrap>li:nth-child(4){left: 1080px;}
+.slideWrap>li:nth-child(5){left: 1440px;}
+.slideWrap>li:nth-child(6){left: 1800px;}
+.slideWrap>li:nth-child(7){left: 2160px;}
+.slideWrap>li:nth-child(8){left: 2520px;}
+.slideWrap>li:nth-child(9){left: 2880px;}
+.slideWrap>li:nth-child(10){left: 3240px;}
+
+
+.slideWrap p{
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.slideWrap p s{
+    color: #666;
+    font-size: 0.8rem;
+}
+
+#section3{margin-top: 150px;}
+#section3 #choice{margin-top: 40px; position: relative;}
+#section3 #choice ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+#section3 #choice ul li{margin-right: 30px;}
+#section3 #choice ul li a{font-size: 1.2rem; color: #ddd;}
+#section3 #choice ul li:first-child a{color: #505946; font-weight: 600;}
+/*section3 best product*/
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+#section3 ul{
+    display: flex;
+}
+#section3 ul li{margin-right: 30px;}
+#section3 ul li a p{
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+#section3 ul li a p s{
+    color: #666;
+    font-size: 0.8rem;
+}
+#section3 ul li a img{
+    width: 340px;
+    height: 400px;
+    display: block;
+}
+
+/*section4*/
+#section4{margin-top: 150px;}
+#section4 .rest ul{
+    display: flex;
+    width: 100%;
+}
+
+#section4 .rest ul li img{
+    width: 100%;
+}
+
+
+/*section5*/
+#section5{
+    margin-top: 150px; position: relative;
+    height: 500px;
+}
+#section5 .wrap{
+    padding:50px;
+}
+#section5 .more{
+    position: absolute;
+    top:15%;
+    right: 5%;
+    color: #333;
+}
+#section5 div .review{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#section5 div .review figure{width: 50%; cursor: pointer; margin-top: 50px;}
+#section5 div .review figure img{
+    width: 450px;
+    height: 300px;
+    display: block;
+    cursor: pointer;
+}
+
+
+#section5 div .review figure figcaption a{
+    font-family: 'Barlow Condensed', sans-serif;
+    position: absolute;
+    top:50%;
+    transform: translate(220%,-40%);
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80px; height: 30px;
+    opacity: 1;
+}
+#section5 div .review figure:first-child figcaption,
+#section5 div .review figure:nth-child(2) figcaption,
+#section5 div .review figure:nth-child(3) figcaption{
+    position: absolute;
+    display: block;
+    top:0;
+    color: #fff;
+    background: rgba(000,000,000,0.5);
+    width: 450px;
+    height: 300px;
+    opacity: 0;
+    margin-top: 50px;
+}
+#section5 div .review figure:first-child figcaption:hover,
+#section5 div .review figure:nth-child(2) figcaption:hover,
+#section5 div .review figure:nth-child(3) figcaption:hover{
+    opacity: 1;
+}
+
+#section5 div .review figure figcaption p{
+    display:block;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+    width: 300px;
+    margin: 0 auto;
+    line-height: 400px;
+}
+
+/*section6*/
+
+#section6 div::after{
+    content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+#section6 {
+    display: flex;
+    margin: 100px auto;
+}
+#section6 div{
+    display: inline-block;
+    border: 2px solid #ddd;
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    position: relative;
+    margin: 0 10px;
+}
+
+#section6 div p{
+    color: #505946;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#section6 div span{
+    float: left;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+#section6 div img{
+    position: absolute;
+    top:10%;
+    right: 0;
+}
+
+#section6 div:hover{
+    background: #818976;
+    transition: all .7s;
+}
+
+#section6 div:hover p, #section6 div:hover span{
+color: #fff;}
+
+
+
+
+/*footer*/
+footer{margin-top: 150px;}
+footer .wrap div:first-child{
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+footer .wrap div:first-child ul{
+    display: flex;
+}
+
+footer .wrap div:first-child ul:first-child li{
+    margin: 0 10px;
+}
+footer .wrap div:first-child ul:first-child li:nth-child(3) a{
+    font-weight: 600;
+}
+footer .wrap div:first-child ul:last-child li{
+    margin: 0 5px 5px 5px;
+}
+
+footer .wrap div:nth-child(2){
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+footer .wrap div:nth-child(2) ul li:first-child{
+    margin-bottom: 20px;
+}
+footer .wrap div:nth-child(2) ul li{
+    margin: 10px 0;
+    color: #666;
+}
+footer .wrap div:nth-child(2) ul:first-child li:nth-child(2){
+    font-size: 1.6rem;
+    color: #333;
+}
+footer .wrap div:nth-child(2) ul li strong{
+    font-size: 1.3rem;
+    color: #505946;
+    font-weight: 500;
+}
+footer .wrap div:last-child {display: flex; justify-content: space-between;}
+footer .wrap div:last-child p{color: #666; margin: 40px 0;}
+
