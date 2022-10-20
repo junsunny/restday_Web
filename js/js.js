@@ -48,5 +48,13 @@ $(document).ready(function(){
             $('.light').hide();
             return false;
             });
+        
+            $( '.popup-img' ).magnificPopup( {
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            } );
+        
 
 });
